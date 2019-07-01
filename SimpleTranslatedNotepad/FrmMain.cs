@@ -44,6 +44,9 @@ namespace SimpleTranslatedNotepad
             }
         }
 
+        /// <summary>
+        ///     Translate UI
+        /// </summary>
         private void TranslateUI()
         {
             Text = I18n.Get("form_title_idle");
