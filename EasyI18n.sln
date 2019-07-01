@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyI18n", "EasyI18n\EasyI18n.csproj", "{9753AE6D-9D2D-4A5A-AAC4-0005215EADB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{3B1A5B96-6A50-48EB-A183-3501562DD162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTranslatedNotepad", "SimpleTranslatedNotepad\SimpleTranslatedNotepad.csproj", "{B727ACE9-81A5-4B80-8ED5-0F43B1039F52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9753AE6D-9D2D-4A5A-AAC4-0005215EADB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9753AE6D-9D2D-4A5A-AAC4-0005215EADB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9753AE6D-9D2D-4A5A-AAC4-0005215EADB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9753AE6D-9D2D-4A5A-AAC4-0005215EADB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B727ACE9-81A5-4B80-8ED5-0F43B1039F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B727ACE9-81A5-4B80-8ED5-0F43B1039F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B727ACE9-81A5-4B80-8ED5-0F43B1039F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B727ACE9-81A5-4B80-8ED5-0F43B1039F52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B727ACE9-81A5-4B80-8ED5-0F43B1039F52} = {3B1A5B96-6A50-48EB-A183-3501562DD162}
+	EndGlobalSection
+EndGlobal

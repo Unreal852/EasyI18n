@@ -1,0 +1,17 @@
+<Language Locale="en_GB" Name="English (United Kingdom)">
+    <Category Name="Menu" Description="Menu related translations">
+        <Translation Key="menu_file" Value="File"/>
+        <Translation Key="menu_new" Value="New"/>
+        <Translation Key="menu_open" Value="Open"/>
+        <Translation Key="menu_save" Value="Save"/>
+        <Translation Key="menu_exit" Value="Exit"/>
+        <Translation Key="menu_edit" Value="Edit"/>
+        <Translation Key="menu_select_all" Value="Select All"/>
+        <Translation Key="menu_clear" Value="Clear"/>
+        <Translation Key="menu_lang" Value="Language"/>
+    </Category>
+    <Category Name="Form" Description="Form related translations">
+        <Translation Key="form_title_idle" Value="Notepad"/>
+        <Translation Key="form_title_editing" Value="Notepad - Editing '[0]'"/>
+    </Category>
+</Language>

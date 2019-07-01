@@ -1,0 +1,17 @@
+<Language Locale="fr_FR" Name="French (France)">
+    <Category Name="Menu" Description="Menu related translation">
+        <Translation Key="menu_file" Value="Fichier"/>
+        <Translation Key="menu_new" Value="Nouveau"/>
+        <Translation Key="menu_open" Value="Ouvrir"/>
+        <Translation Key="menu_save" Value="Enregistrer"/>
+        <Translation Key="menu_exit" Value="Quitter"/>
+        <Translation Key="menu_edit" Value="Edition"/>
+        <Translation Key="menu_select_all" Value="Selectionner Tout"/>
+        <Translation Key="menu_clear" Value="Supprimer Tout"/>
+        <Translation Key="menu_lang" Value="Langue"/>
+    </Category>
+    <Category Name="Form" Description="Form related translation">
+        <Translation Key="form_title_idle" Value="Bloc Notes"/>
+        <Translation Key="form_title_editing" Value="Bloc Notes - Edition de '[0]'"/>
+    </Category>
+</Language>
