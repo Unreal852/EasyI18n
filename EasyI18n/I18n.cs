@@ -13,7 +13,7 @@ namespace EasyI18n
         private static Dictionary<Locale, Translation> Translations { get; } = new Dictionary<Locale, Translation>();
 
         /// <summary>
-        ///     Default Language
+        /// Default Language
         /// </summary>
         public static Locale DefaultLocale
         {
@@ -22,40 +22,40 @@ namespace EasyI18n
             {
                 if(s_DefaultLocale == value)
                     return;
-                var e = new DefaultLanguageChangedEventArgs(s_DefaultLocale, value);
+                DefaultLanguageChangedEventArgs e = new DefaultLanguageChangedEventArgs(s_DefaultLocale, value);
                 s_DefaultLocale = value;
                 OnDefaultLanguageChanged?.Invoke(null, e);
             }
         }
 
         /// <summary>
-        ///     Called when the default language changed
+        /// Called when the default language changed
         /// </summary>
         public static event EventHandler<DefaultLanguageChangedEventArgs> OnDefaultLanguageChanged;
 
         /// <summary>
-        ///     Load locales from directory
+        /// Load locales from directory
         /// </summary>
         /// <param name="directory">Locales Directory</param>
         public static void LoadLocales(string directory)
         {
-            var dir = new DirectoryInfo(directory);
+            DirectoryInfo dir = new DirectoryInfo(directory);
             if(!dir.Exists)
                 return;
-            var files = dir.GetFiles("*.xml");
-            foreach(var fileInfo in files)
+            FileInfo[] files = dir.GetFiles("*.xml");
+            foreach(FileInfo fileInfo in files)
                 LoadLocale(fileInfo);
         }
 
         /// <summary>
-        ///     Load translation file
+        /// Load translation file
         /// </summary>
         /// <param name="file">Translation File</param>
         public static void LoadLocale(FileInfo file)
         {
             if(!file.Exists)
                 return;
-            var translation = Translation.FromFile(file);
+            Translation translation = Translation.FromFile(file);
             if(translation == null)
                 return;
             if(Translations.ContainsKey(translation.Locale))
@@ -65,7 +65,7 @@ namespace EasyI18n
         }
 
         /// <summary>
-        ///     Get translation
+        /// Get translation
         /// </summary>
         /// <param name="key">Translation Key</param>
         /// <returns><see cref="string" /> translation if exists, <see cref="string" /> key otherwise</returns>
@@ -75,7 +75,7 @@ namespace EasyI18n
         }
 
         /// <summary>
-        ///     Get translation
+        /// Get translation
         /// </summary>
         /// <param name="key">Translation Key</param>
         /// <param name="args">Translation Args</param>
@@ -86,7 +86,7 @@ namespace EasyI18n
         }
 
         /// <summary>
-        ///     Get translation
+        /// Get translation
         /// </summary>
         /// <param name="locale">Locale</param>
         /// <param name="key">Translation Key</param>
@@ -98,12 +98,12 @@ namespace EasyI18n
                 return key;
             if(args == null || args.Length <= 0)
                 return Translations[locale][key];
-            var translated = Translations[locale][key];
-            for(var i = 0; translated.Contains($"[{i}]"); i++)
+            string translated = Translations[locale][key];
+            for(int i = 0; translated.Contains($"[{i}]"); i++)
             {
                 if(args.Length - 1 < i)
                     break;
-                var currentArg = args[i];
+                object currentArg = args[i];
                 if(currentArg is KeyValue value)
                 {
                     if(Translations[locale].ContainsKey(value.Key))

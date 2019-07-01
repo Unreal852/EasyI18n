@@ -32,7 +32,7 @@ namespace SimpleTranslatedNotepad
         }
 
         /// <summary>
-        ///     File Name
+        /// File Name
         /// </summary>
         private string FileName
         {
@@ -45,7 +45,7 @@ namespace SimpleTranslatedNotepad
         }
 
         /// <summary>
-        ///     Translate UI
+        /// Translate UI
         /// </summary>
         private void TranslateUI()
         {
@@ -69,10 +69,10 @@ namespace SimpleTranslatedNotepad
 
         private void BtnOpenFileOnClick(object sender, EventArgs e)
         {
-            var diag = new OpenFileDialog();
+            OpenFileDialog diag = new OpenFileDialog();
             if(diag.ShowDialog() == DialogResult.OK)
             {
-                var file = new FileInfo(diag.FileName);
+                FileInfo file = new FileInfo(diag.FileName);
                 if(file.Exists && (file.FullName.EndsWith(".txt") || file.FullName.EndsWith(".log")))
                 {
                     txtContent.Text = File.ReadAllText(file.FullName);
@@ -83,7 +83,7 @@ namespace SimpleTranslatedNotepad
 
         private void BtnSaveFileOnClick(object sender, EventArgs e)
         {
-            var diag = new SaveFileDialog();
+            SaveFileDialog diag = new SaveFileDialog();
             if(diag.ShowDialog() == DialogResult.OK)
                 File.WriteAllText(diag.FileName, txtContent.Text);
         }

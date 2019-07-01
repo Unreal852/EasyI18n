@@ -60,7 +60,7 @@ namespace EasyI18n.Locales
         };
 
         /// <summary>
-        ///     Get the name of the specified locale
+        /// Get the name of the specified locale
         /// </summary>
         /// <param name="locale">Locale</param>
         /// <returns><see cref="string" /> Locale name, <see cref="Locale.unk_UNK" /> otherwise</returns>
@@ -72,7 +72,7 @@ namespace EasyI18n.Locales
         }
 
         /// <summary>
-        ///     Get locale from name
+        /// Get locale from name
         /// </summary>
         /// <param name="localeName">Locale Name</param>
         /// <returns><see cref="Locale" /> if name matched, <see cref="Locale.unk_UNK" /> otherwise</returns>
@@ -85,7 +85,7 @@ namespace EasyI18n.Locales
         }
 
         /// <summary>
-        ///     Get locale from string
+        /// Get locale from string
         /// </summary>
         /// <param name="locale">Locale</param>
         /// <returns><see cref="Locale" /> if the given string is valid, <see cref="Locale.unk_UNK" /> otherwise</returns>

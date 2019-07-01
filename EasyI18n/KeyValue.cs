@@ -10,7 +10,7 @@ namespace EasyI18n
         public string Key { get; }
 
         /// <summary>
-        ///     Return key
+        /// Return key
         /// </summary>
         /// <returns><see cref="string" /> Key</returns>
         public override string ToString()
